@@ -1,0 +1,60 @@
+.title-1 {
+	font-family: 'BehrensAntiqua', sans-serif;
+	font-size: 56px;
+}
+
+.title-2 {
+	font-family: 'BehrensAntiqua', sans-serif;
+	font-size: 48px;
+}
+
+.title-3 {
+	font-family: 'BehrensAntiqua', sans-serif;
+	font-size: 38px;
+}
+
+.text {
+	line-height: 2;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-grey {
+	color: rgba($white,.3);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo__text {
+	font-family: 'BehrensAntiqua', sans-serif;
+	color: $main;
+}
+
+.mobile-logo {
+	display: none;
+}
+
+
+
+@media (max-width: 991.98px) {
+	.title-1 {
+		font-size: 28px;
+	}
+	.title-2 {
+		font-size: 28px;
+	}
+	.title-3 {
+		font-size: 28px;
+	}
+	.mobile-logo {
+		display: flex;
+	}
+	.desktop-logo {
+		display: none;
+	}
+}

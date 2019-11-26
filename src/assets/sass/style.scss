@@ -1,0 +1,25 @@
+/*******************
+Table of contents
+
+## Bootstrap
+## Slick
+## Customs
+## Sidebar
+*******************/
+
+
+/* ## Bootstrap
+====================*/
+@import "../../../bower_components/bootstrap/scss/bootstrap.scss";
+
+/* ## Slick
+====================*/
+@import "../../../bower_components/slick-carousel/slick/slick.scss";
+
+/* ## Customs
+====================*/
+@import "customs/customs";
+
+/* ## Sidebar
+====================*/
+@import "../../templates/sidebar/sidebar";
