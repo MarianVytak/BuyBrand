@@ -3,4 +3,13 @@
 
 @import "buttons";
 @import "titles";
+@import "dropdown";
 @import "slider";
+
+.content {
+	display: grid;
+	grid-template-columns: minmax(0, 264px) minmax(0, 1fr);
+	grid-gap: 24px;
+	padding-top: 30px;
+	border-top: 1px solid $main;
+}
