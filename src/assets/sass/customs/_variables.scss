@@ -1,10 +1,10 @@
 $white: #ffffff !default;
 $black: #000000 !default;
 $main: #1e90ff !default;
-$green-1: #185146 !default;
-$green-2: #238d78 !default;
-$green-3: #3dc5aa !default;
-$green-4: #9fd7bd !default;
+$age-1: #109b5b !default;
+$age-2: #4a6d63 !default;
+$age-3: #005246 !default;
+$age-4: #6a3b53 !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -12,10 +12,10 @@ $colors: map-merge(
 						"white": $white,
 						"black": $black,
 						"main": $main,
-						"green-1": $green-1,
-						"green-2": $green-2,
-						"green-3": $green-3,
-						"green-4": $green-4,
+						"age-1": $age-1,
+						"age-2": $age-2,
+						"age-3": $age-3,
+						"age-4": $age-4,
 				),
 				$colors
 );
@@ -26,10 +26,10 @@ $theme-colors: map-merge(
 						"white": $white,
 						"black": $black,
 						"main": $main,
-						"green-1": $green-1,
-						"green-2": $green-2,
-						"green-3": $green-3,
-						"green-4": $green-4,
+						"age-1": $age-1,
+						"age-2": $age-2,
+						"age-3": $age-3,
+						"age-4": $age-4,
 				),
 				$theme-colors
 );
