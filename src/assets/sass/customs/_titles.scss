@@ -1,3 +1,21 @@
+.info {
+	position: absolute;
+	top: 50%;
+	right: -50px;
+	transform: translate(-50%,-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 2px solid $main;
+	font-size: 18px;
+	color: $main;
+	text-transform: lowercase;
+	cursor: pointer;
+}
+
 .h1 {
 	position: relative;
 	display: inline-block;

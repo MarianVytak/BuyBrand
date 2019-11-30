@@ -1,0 +1,16 @@
+.popover {
+	max-width: 497px;
+	margin-left: 0.8rem;
+}
+
+.popover__list_item {
+	display: flex;
+	margin-bottom: 1em;
+}
+
+.popover__list_item_icon {
+	margin-right: 1em;
+	img {
+		max-width: 25px;
+	}
+}
