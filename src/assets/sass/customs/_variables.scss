@@ -1,5 +1,6 @@
 $white: #ffffff !default;
 $black: #000000 !default;
+$gray: #eff2f9 !default;
 $main: #1e90ff !default;
 $age-1: #109b5b !default;
 $age-2: #4a6d63 !default;
@@ -11,6 +12,7 @@ $colors: map-merge(
 				(
 						"white": $white,
 						"black": $black,
+						"gray": $gray,
 						"main": $main,
 						"age-1": $age-1,
 						"age-2": $age-2,
@@ -25,6 +27,7 @@ $theme-colors: map-merge(
 				(
 						"white": $white,
 						"black": $black,
+						"gray": $gray,
 						"main": $main,
 						"age-1": $age-1,
 						"age-2": $age-2,
