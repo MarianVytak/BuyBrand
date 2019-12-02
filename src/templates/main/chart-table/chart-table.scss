@@ -12,6 +12,61 @@
 	height: 40px;
 	padding: 0 8px;
 	background-color: $gray;
+	cursor: pointer;
+	&.collapsed {
+		.chart-table__block_menu_dropdown_text {
+			&:before {
+				content: 'Показать подгруппы';
+			}
+		}
+		.chart-table__block_menu_arrow {
+			transform: none;
+		}
+	}
+}
+
+.chart-table__block_menu_dropdown {
+	display: flex;
+	align-items: center;
+}
+
+.chart-table__block_menu_dropdown_text {
+	&:before {
+		content: 'Свернуть подгруппы';
+		padding-right: 15px;
+		font-size: 12px;
+		white-space: nowrap;
+	}
+}
+
+.chart-table__block_menu_arrow {
+	position: relative;
+	transform: rotate(180deg);
+	width: 24px;
+	height: 24px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%231e90ff' fill-rule='nonzero' d='M2.836 7a.5.5 0 0 0-.699.715L11.642 17a.5.5 0 0 0 .698 0l9.523-9.284A.5.5 0 1 0 21.165 7l-9.174 8.944L2.836 7z'/%3E%3C/svg%3E");
+	transition: .3s;
+}
+
+.chart-table__subgroup {
+	display: flex;
+	align-items: center;
+	padding-top: 15px;
+}
+
+.chart-table__subgroup_item {
+	margin-right: 40px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.chart-table__subgroup_item_link {
+	color: $black;
+	transition: .3s;
+	&:hover {
+		color: $main;
+	}
 }
 
 .chart-table__block_menu_label {
@@ -87,4 +142,8 @@
 	justify-content: flex-start;
 	font-weight: 500;
 	font-size: 14px;
+}
+
+.chart-table__block_list_item_change_arrow {
+	margin-left: 10px;
 }
