@@ -20,16 +20,6 @@ $(function () {
 
     $(window).on("load",function(){
 
-        // $(".chart-table__subgroup").mCustomScrollbar({
-        //     theme: 'dark',
-        //     horizontalScroll: true,
-        //     autoHideScrollbar: false,
-        //     //scrollButtons: true,
-        //     mouseWheel: {
-        //         enable: true,
-        //     }
-        // });
-
         $(".chart-table__block_list").mCustomScrollbar();
 
     });
