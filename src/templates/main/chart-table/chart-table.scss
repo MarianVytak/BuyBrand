@@ -92,6 +92,9 @@
 	&.active {
 		height: auto;
 		border-right: 1px solid rgba($black, 0.15);
+		//.chart-table__block_list_item {
+		//	padding-right: 16px;
+		//}
 	}
 	.mCSB_inside {
 		.mCSB_container {
@@ -104,6 +107,7 @@
 	.mCSB_scrollTools {
 		background-color: $gray;
 		opacity: 1;
+		transition: none;
 		.mCSB_dragger {
 			.mCSB_dragger_bar {
 				width: 6px;
@@ -135,7 +139,7 @@
 	background-color: $gray;
 	&.active {
 		.chart-table__block_list_all_arrow {
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%231e90ff' fill-rule='nonzero' d='M2.836 7a.5.5 0 0 0-.699.715L11.642 17a.5.5 0 0 0 .698 0l9.523-9.284A.5.5 0 1 0 21.165 7l-9.174 8.944L2.836 7z'/%3E%3C/svg%3E");
+			transform: rotate(180deg);
 		}
 	}
 }
@@ -145,7 +149,7 @@
 	height: 24px;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%231e90ff' fill-rule='nonzero' d='M2.836 7a.5.5 0 0 0-.699.715L11.642 17a.5.5 0 0 0 .698 0l9.523-9.284A.5.5 0 1 0 21.165 7l-9.174 8.944L2.836 7z'/%3E%3C/svg%3E");
 	background-color: $white;
-	transition: .3s;
+	//transition: .3s;
 }
 
 .chart-table__block_list_item {

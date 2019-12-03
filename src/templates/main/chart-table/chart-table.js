@@ -4,7 +4,9 @@ $(function () {
 
     $('.chart-table__block_list_all').on('click', function (e) {
         e.preventDefault();
-        $('.chart-table__block_list').toggleClass('active');
+        let thisList = $(this).attr('href');
+        $(this).toggleClass('active');
+        $(thisList).toggleClass('active');
     });
 
     $(window).on("load",function(){
