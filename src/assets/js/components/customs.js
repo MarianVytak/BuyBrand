@@ -231,4 +231,14 @@ $(function () {
             '</div>',
     });
 
+    const range = document.getElementById('range');
+    noUiSlider.create(range, {
+        start: [20],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 100
+        }
+    });
+
 });
