@@ -50,3 +50,18 @@
 		color: $white;
 	}
 }
+
+
+
+@include media-breakpoint-down(lg) {
+	.dropdown-toggle {
+		font-size: 12px;
+	}
+}
+@include media-breakpoint-down(md) {
+	.dropdown-toggle {
+		font-size: 14px;
+	}
+}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(xs) {}

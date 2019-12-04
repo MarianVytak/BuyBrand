@@ -14,3 +14,17 @@
 		max-width: 25px;
 	}
 }
+
+.popover-chart {
+	border-radius: 0;
+	.popover-body {
+		padding: 0;
+	}
+	.arrow {
+		&:before {
+			display: none;
+			border-color: $main !important;
+		}
+		&:after {}
+	}
+}

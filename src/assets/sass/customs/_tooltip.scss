@@ -1,0 +1,74 @@
+.tooltip {
+	width: 354px;
+	max-width: none;
+	padding: 0;
+	background-color: $white !important;
+	opacity: 1 !important;
+	.arrow {
+		width: 10px;
+		height: 20px;
+		&:before {
+			content: '';
+			top: 50%;
+			transform: translateY(-50%);
+			width: 0;
+			height: 0;
+			border-style: solid;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			//top: 0;
+			//transform: translateY(1px);
+			top: 50%;
+			transform: translateY(-50%);
+			display: block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+		}
+	}
+	&.bs-tooltip-right {
+		margin-left: -5px;
+		.arrow {
+			&:before {
+				left: -7px;
+				border-width: 10px 10px 10px 0;
+				border-color: transparent #c7e62f transparent transparent;
+			}
+			&:after {
+				content: '';
+				display: block;
+				left: 0;
+				border-width: 5px 5px 5px 0;
+				border-color: transparent #ffffff transparent transparent;
+			}
+		}
+	}
+	&.bs-tooltip-left {
+		margin-right: -5px;
+		.arrow {
+			right: -5px;
+			&:before {
+				right: -7px;
+				border-width: 12px 0 12px 12px;
+				border-color: transparent transparent transparent #c7e62f;
+			}
+			&:after {
+				content: '';
+				display: block;
+				right: 5px;
+				border-width: 5px 0 5px 5px;
+				border-color: transparent transparent transparent #ffffff;
+			}
+		}
+	}
+}
+
+.tooltip-inner {
+	width: 354px;
+	max-width: none;
+	padding: 0;
+	background-color: $white;
+	color: $black;
+}

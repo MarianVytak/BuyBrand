@@ -1,0 +1,94 @@
+.chart-hover {
+	width: 100%;
+	max-width: 354px;
+	border: 5px solid #c7e62f;
+}
+
+.chart-hover_list {}
+
+.chart-hover_list_item {
+	display: grid;
+	grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr);
+	height: 56px;
+	padding: 0.5em 1em;
+	border-bottom: 1px solid rgba($black, .15);
+	&:last-child {
+		border: none;
+	}
+	&.active {
+		color: $white;
+	}
+}
+
+.chart-hover_list_item_names {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.chart-hover_list_item_name {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.chart-hover_list_item_name-full {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	font-size: 12px;
+}
+
+.chart-hover_list_item_info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.chart-hover_list_item_info_ratio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	font-weight: bold;
+}
+
+.chart-hover_list_item_info_chart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.chart-hover_list_item_position {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.chart-hover_list_item_position_this {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.chart-hover_list_item_position_change {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	font-size: 12px;
+	img {
+		margin-right: 3px;
+	}
+}

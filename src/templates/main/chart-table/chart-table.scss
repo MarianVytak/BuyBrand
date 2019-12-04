@@ -1,5 +1,5 @@
 .chart-table {
-	//padding-top: 50px;
+	padding-top: 50px;
 	display: none;
 }
 
@@ -249,4 +249,59 @@
 
 .chart-table__block_list_item_change_arrow {
 	margin-left: 10px;
+}
+
+
+
+@include media-breakpoint-down(md) {
+	.chart-table {
+		padding-top: 0;
+	}
+}
+@include media-breakpoint-down(sm) {
+	.chart-table {
+		.ratio-up {
+			border-width: 0 3px 5px 3px;
+		}
+		.ratio-down {
+			border-width: 5px 3px 0 3px;
+		}
+	}
+	.chart-table__subgroup_item {
+		padding-right: 20px;
+	}
+	.chart-table__subgroup_item_link {
+		padding: 8px 0;
+		font-size: 12px;
+	}
+	.chart-table__block_list {
+		height: 140px;
+	}
+	.chart-table__block_list_item {
+		grid-template-columns: minmax(0, 40px) minmax(0, 1fr) minmax(0, 50px) minmax(0, 70px);
+		height: 35px;
+	}
+	.chart-table__block_menu_dropdown_text {
+		display: none;
+	}
+	.chart-table__block_list_item_age {
+		padding: 0 8px;
+		font-size: 12px;
+	}
+	.chart-table__block_list_item_name {
+		padding: 0 8px;
+		font-size: 10px;
+	}
+	.chart-table__block_list_item_ratio {
+		font-size: 10px;
+	}
+	.chart-table__block_list_item_chart {
+		display: none;
+	}
+	.chart-table__block_list_item_position {
+		font-size: 10px;
+	}
+	.chart-table__block_list_item_change {
+		display: none;
+	}
 }

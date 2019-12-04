@@ -9,6 +9,20 @@ $(function () {
         slidesToShow: 6,
         variableWidth: true,
         initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     });
 
     $('.chart-table__block_list_all').on('click', function (e) {
