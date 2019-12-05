@@ -3,7 +3,8 @@ $(function () {
     'use strict';
 
     // Заміна тексту для dropdown
-    $('.dropdown-item').on('click', function () {
+    $('.dropdown-item').on('click', function (e) {
+        e.preventDefault();
         let thisText = $(this).text();
         let thisDropdown = $(this).attr('data-target');
         $(thisDropdown).text(thisText);

@@ -53,6 +53,13 @@
 	padding: 40px 60px;
 }
 
+.step-back {
+	position: absolute;
+	left: 0;
+	color: $main;
+	cursor: pointer;
+}
+
 
 
 @include media-breakpoint-up(sm) {

@@ -51,6 +51,37 @@
 	}
 }
 
+.dropdown-form-scroll {
+	overflow-y: auto;
+	max-height: 240px;
+	//max-height: 360px;
+}
+
+.dropdown__rear-open {
+	max-width: 230px;
+}
+
+.category__group_title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 40px;
+	padding: 0 1rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	font-weight: 500;
+}
+
+.category__group_list_item {
+	.dropdown-item {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		height: 40px;
+		padding: 0 2rem;
+		font-size: 14px;
+	}
+}
+
 
 
 @include media-breakpoint-down(lg) {
