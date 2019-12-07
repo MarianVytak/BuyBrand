@@ -12,7 +12,8 @@
                 <form class="needs-validation" novalidate>
                     <div class="form-group">
                         <label class="label">
-                            <input class="input form-control" required type="text" placeholder="Уже есть аккаунт? Укажите ваш логин">
+                            <input class="input form-control" placeholder="Уже есть аккаунт? Укажите ваш логин" required
+                                   type="text">
                         </label>
                         <div class="valid-tooltip">
                             Looks good!
@@ -20,7 +21,7 @@
                     </div>
                     <div class="form-group">
                         <label class="label">
-                            <input class="input form-control" required type="text" placeholder="Название франшизы">
+                            <input class="input form-control" placeholder="Название франшизы" required type="text">
                         </label>
                         <div class="valid-tooltip">
                             Looks good!
@@ -28,36 +29,26 @@
                     </div>
                     <div class="form-group">
                         <div class="dropdown">
-                            <button class="dropdown-toggle" type="button" id="categoryGroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
+                                    id="categoryGroup" type="button">
                                 Категория франшизы
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="categoryGroup">
+                            <div aria-labelledby="categoryGroup" class="dropdown-menu">
                                 <ul class="category__group dropdown-form-scroll">
                                     <li class="category__group_item">
                                         <div class="category__group_title">Группа</div>
                                         <ul class="category__group_list">
                                             <li class="category__group_list_item">
-                                                <a class="dropdown-item" href="#" data-target="#categoryGroup">Подгруппа</a>
+                                                <a class="dropdown-item" data-target="#categoryGroup"
+                                                   href="#">Подгруппа</a>
                                             </li>
                                             <li class="category__group_list_item">
-                                                <a class="dropdown-item" href="#" data-target="#categoryGroup">Подгруппа</a>
+                                                <a class="dropdown-item" data-target="#categoryGroup"
+                                                   href="#">Подгруппа</a>
                                             </li>
                                             <li class="category__group_list_item">
-                                                <a class="dropdown-item" href="#" data-target="#categoryGroup">Подгруппа</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="category__group_item">
-                                        <div class="category__group_title">Группа</div>
-                                        <ul class="category__group_list">
-                                            <li class="category__group_list_item">
-                                                <a class="dropdown-item" href="#" data-target="#categoryGroup">Подгруппа</a>
-                                            </li>
-                                            <li class="category__group_list_item">
-                                                <a class="dropdown-item" href="#" data-target="#categoryGroup">Подгруппа</a>
-                                            </li>
-                                            <li class="category__group_list_item">
-                                                <a class="dropdown-item" href="#" data-target="#categoryGroup">Подгруппа</a>
+                                                <a class="dropdown-item" data-target="#categoryGroup"
+                                                   href="#">Подгруппа</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -65,13 +56,33 @@
                                         <div class="category__group_title">Группа</div>
                                         <ul class="category__group_list">
                                             <li class="category__group_list_item">
-                                                <a class="dropdown-item" href="#" data-target="#categoryGroup">Подгруппа</a>
+                                                <a class="dropdown-item" data-target="#categoryGroup"
+                                                   href="#">Подгруппа</a>
                                             </li>
                                             <li class="category__group_list_item">
-                                                <a class="dropdown-item" href="#" data-target="#categoryGroup">Подгруппа</a>
+                                                <a class="dropdown-item" data-target="#categoryGroup"
+                                                   href="#">Подгруппа</a>
                                             </li>
                                             <li class="category__group_list_item">
-                                                <a class="dropdown-item" href="#" data-target="#categoryGroup">Подгруппа</a>
+                                                <a class="dropdown-item" data-target="#categoryGroup"
+                                                   href="#">Подгруппа</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="category__group_item">
+                                        <div class="category__group_title">Группа</div>
+                                        <ul class="category__group_list">
+                                            <li class="category__group_list_item">
+                                                <a class="dropdown-item" data-target="#categoryGroup"
+                                                   href="#">Подгруппа</a>
+                                            </li>
+                                            <li class="category__group_list_item">
+                                                <a class="dropdown-item" data-target="#categoryGroup"
+                                                   href="#">Подгруппа</a>
+                                            </li>
+                                            <li class="category__group_list_item">
+                                                <a class="dropdown-item" data-target="#categoryGroup"
+                                                   href="#">Подгруппа</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -79,7 +90,9 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn w-100" type="submit" data-dismiss="modal" data-toggle="modal" data-target="#modalPlacing-2">Далее</button>
+                    <button class="btn w-100" data-dismiss="modal" data-target="#modalPlacing-2" data-toggle="modal"
+                            type="submit">Далее
+                    </button>
                 </form>
             </div>
         </div>
@@ -94,7 +107,8 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="modalPlacingLabel-2">Размещение в котировке</h5>
                 <div class="modal-step">Шаг 2 из 3
-                    <span class="step-back" data-dismiss="modal" data-toggle="modal" data-target="#modalPlacing">Назад</span>
+                    <span class="step-back" data-dismiss="modal" data-target="#modalPlacing"
+                          data-toggle="modal">Назад</span>
                 </div>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"></button>
             </div>
@@ -102,7 +116,8 @@
                 <form class="needs-validation" novalidate>
                     <div class="form-group">
                         <label class="label">
-                            <input class="input form-control" required type="text" placeholder="Юридическое лицо, на которое зарег. франшиза">
+                            <input class="input form-control" placeholder="Юридическое лицо, на которое зарег. франшиза" required
+                                   type="text">
                         </label>
                         <div class="valid-tooltip">
                             Looks good!
@@ -110,7 +125,23 @@
                     </div>
                     <div class="form-group">
                         <label class="label">
-                            <input class="input form-control" required type="text" placeholder="ИНН">
+                            <input class="input form-control" placeholder="ИНН" required type="text">
+                        </label>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                        <div class="input-add">
+                            <div class="input-add__icon">
+                                +
+                                <span class="info" data-container="body" data-content='Вы можете добавить несколько <br> юридических лиц, на которые <br> зарегестрирована франшиза ' data-html="true"
+                                      data-placement="right"
+                                      data-toggle="popover">i</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label">
+                            <input class="input form-control" placeholder="ФИО руководителя" required type="text">
                         </label>
                         <div class="valid-tooltip">
                             Looks good!
@@ -118,7 +149,7 @@
                     </div>
                     <div class="form-group">
                         <label class="label">
-                            <input class="input form-control" required type="text" placeholder="ФИО руководителя">
+                            <input class="input form-control" placeholder="Мобильный телефон" required type="tel">
                         </label>
                         <div class="valid-tooltip">
                             Looks good!
@@ -126,7 +157,7 @@
                     </div>
                     <div class="form-group">
                         <label class="label">
-                            <input class="input form-control" required type="tel" placeholder="Мобильный телефон">
+                            <input class="input form-control" placeholder="Электронная почта" required type="email">
                         </label>
                         <div class="valid-tooltip">
                             Looks good!
@@ -134,21 +165,15 @@
                     </div>
                     <div class="form-group">
                         <label class="label">
-                            <input class="input form-control" required type="email" placeholder="Электронная почта">
+                            <input class="input form-control" placeholder="Веб-сайт" required type="text">
                         </label>
                         <div class="valid-tooltip">
                             Looks good!
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="label">
-                            <input class="input form-control" required type="text" placeholder="Веб-сайт">
-                        </label>
-                        <div class="valid-tooltip">
-                            Looks good!
-                        </div>
-                    </div>
-                    <button class="btn w-100" type="submit" data-dismiss="modal" data-toggle="modal" data-target="#modalPlacing-3">Далее</button>
+                    <button class="btn w-100" data-dismiss="modal" data-target="#modalPlacing-3" data-toggle="modal"
+                            type="submit">Далее
+                    </button>
                 </form>
             </div>
         </div>
@@ -163,7 +188,8 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="modalPlacingLabel-3">Размещение в котировке</h5>
                 <div class="modal-step">Шаг 3 из 3
-                    <span class="step-back" data-dismiss="modal" data-toggle="modal" data-target="#modalPlacing-2">Назад</span>
+                    <span class="step-back" data-dismiss="modal" data-target="#modalPlacing-2"
+                          data-toggle="modal">Назад</span>
                 </div>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"></button>
             </div>
@@ -171,7 +197,8 @@
                 <form class="needs-validation" novalidate>
                     <div class="form-group">
                         <label class="label">
-                            <input class="input form-control" required type="text" placeholder="ФИО заполнившего анкету">
+                            <input class="input form-control" placeholder="ФИО заполнившего анкету" required
+                                   type="text">
                         </label>
                         <div class="valid-tooltip">
                             Looks good!
@@ -179,36 +206,38 @@
                     </div>
                     <div class="form-group">
                         <div class="dropdown">
-                            <button class="dropdown-toggle" type="button" id="yearOpen" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
+                                    id="yearOpen" type="button">
                                 Год открытия франшизы
                             </button>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-form-scroll dropdown__rear-open" aria-labelledby="yearOpen">
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2019</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2018</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2017</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2016</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2015</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2014</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2013</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2012</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2011</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2010</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2009</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2008</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2007</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2006</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2005</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2004</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2003</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2002</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2001</a>
-                                <a class="dropdown-item" href="#" data-target="#yearOpen">2000</a>
+                            <div aria-labelledby="yearOpen"
+                                 class="dropdown-menu dropdown-menu-right dropdown-form-scroll dropdown__rear-open">
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2019</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2018</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2017</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2016</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2015</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2014</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2013</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2012</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2011</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2010</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2009</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2008</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2007</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2006</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2005</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2004</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2003</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2002</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2001</a>
+                                <a class="dropdown-item" data-target="#yearOpen" href="#">2000</a>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="agree-1" checked required>
+                            <input checked class="custom-control-input" id="agree-1" required type="checkbox">
                             <label class="custom-control-label" for="agree-1">
                                 Обязуюсь предоставлять достоверную финансовую и юридическую информацию.
                             </label>
@@ -217,7 +246,7 @@
                     </div>
                     <div class="form-group">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="agree-2" checked required>
+                            <input checked class="custom-control-input" id="agree-2" required type="checkbox">
                             <label class="custom-control-label" for="agree-2">
                                 Подтверждаю согласие на обработку персональных данных
                             </label>

@@ -60,3 +60,31 @@ form {
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
 	background-color: transparent;
 }
+
+.input-add {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 2rem;
+	padding: 1rem 0;
+	border-bottom: 1px dashed rgba(#999999, .5);
+	.info {
+		right: -35px;
+		width: 16px;
+		height: 16px;
+		font-size: 12px;
+	}
+}
+
+.input-add__icon {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border: 1px solid $main;
+	font-size: 21px;
+	color: $main;
+	cursor: pointer;
+}
