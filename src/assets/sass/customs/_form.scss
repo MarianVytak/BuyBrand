@@ -56,3 +56,7 @@ form {
 .custom-control-input:focus ~ .custom-control-label::before {
 	box-shadow: none;
 }
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+	background-color: transparent;
+}
