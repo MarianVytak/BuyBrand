@@ -58,8 +58,19 @@
 .step-back {
 	position: absolute;
 	left: 0;
+	padding-left: 1.2rem;
 	color: $main;
 	cursor: pointer;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		width: 9px;
+		height: 17px;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='17' viewBox='0 0 9 17'%3E%3Cg%3E%3Cg transform='rotate(-90 4.5 8.5)'%3E%3Cpath fill='%23399eff' d='M11.841 12.781a.927.927 0 0 1-1.209.134l-.09-.072-6.438-5.785-6.49 5.76a.927.927 0 0 1-1.217.01l-.082-.08a.903.903 0 0 1-.01-1.204l.08-.082 7.109-6.31a.927.927 0 0 1 1.141-.068l.091.072 7.053 6.34a.904.904 0 0 1 .062 1.285z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	}
 }
 
 

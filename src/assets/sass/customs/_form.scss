@@ -61,6 +61,11 @@ form {
 	background-color: transparent;
 }
 
+.was-validated .custom-control-input:valid:checked ~ .custom-control-label::before, .custom-control-input.is-valid:checked ~ .custom-control-label::before {
+	border: none;
+	background-color: transparent;
+}
+
 .input-add {
 	display: flex;
 	align-items: center;
