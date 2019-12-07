@@ -5,11 +5,27 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="modalPlacingLabel">Размещение в котировке</h5>
-                <div class="modal-step">Шаг 1 из 3</div>
+                <div class="modal-step">
+                    <div class="placingForm-1">
+                        Шаг 1 из 3
+                    </div>
+                </div>
+                <div class="modal-step">
+                    <div class="placingForm-2">
+                        Шаг 2 из 3
+                        <span class="step-back step-back-1">Назад</span>
+                    </div>
+                </div>
+                <div class="modal-step">
+                    <div class="placingForm-3">
+                        Шаг 3 из 3
+                        <span class="step-back step-back-2">Назад</span>
+                    </div>
+                </div>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button"></button>
             </div>
             <div class="modal-body">
-                <form class="needs-validation" novalidate>
+                <form class="needs-validation placingForm-1" novalidate>
                     <div class="form-group">
                         <label class="label">
                             <input class="input form-control" placeholder="Уже есть аккаунт? Укажите ваш логин" required
@@ -29,7 +45,8 @@
                     </div>
                     <div class="form-group">
                         <div class="dropdown">
-                            <button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
+                            <button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                                    data-toggle="dropdown"
                                     id="categoryGroup" type="button">
                                 Категория франшизы
                             </button>
@@ -90,33 +107,13 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn w-100" data-dismiss="modal" data-target="#modalPlacing-2" data-toggle="modal"
-                            type="submit">Далее
-                    </button>
+                    <button class="btn w-100 placingForm-1__btn" type="submit">Далее</button>
                 </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Placing 2 -->
-<div aria-hidden="true" aria-labelledby="modalPlacingLabel-2" class="modal fade" id="modalPlacing-2" role="dialog"
-     tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalPlacingLabel-2">Размещение в котировке</h5>
-                <div class="modal-step">Шаг 2 из 3
-                    <span class="step-back" data-dismiss="modal" data-target="#modalPlacing"
-                          data-toggle="modal">Назад</span>
-                </div>
-                <button aria-label="Close" class="close" data-dismiss="modal" type="button"></button>
-            </div>
-            <div class="modal-body">
-                <form class="needs-validation" novalidate>
+                <form class="needs-validation placingForm-2" novalidate>
                     <div class="form-group">
                         <label class="label">
-                            <input class="input form-control" placeholder="Юридическое лицо, на которое зарег. франшиза" required
+                            <input class="input form-control" placeholder="Юридическое лицо, на которое зарег. франшиза"
+                                   required
                                    type="text">
                         </label>
                         <div class="valid-tooltip">
@@ -133,7 +130,9 @@
                         <div class="input-add">
                             <div class="input-add__icon">
                                 +
-                                <span class="info" data-container="body" data-content='Вы можете добавить несколько <br> юридических лиц, на которые <br> зарегестрирована франшиза ' data-html="true"
+                                <span class="info" data-container="body"
+                                      data-content='Вы можете добавить несколько <br> юридических лиц, на которые <br> зарегестрирована франшиза '
+                                      data-html="true"
                                       data-placement="right"
                                       data-toggle="popover">i</span>
                             </div>
@@ -171,30 +170,9 @@
                             Looks good!
                         </div>
                     </div>
-                    <button class="btn w-100" data-dismiss="modal" data-target="#modalPlacing-3" data-toggle="modal"
-                            type="submit">Далее
-                    </button>
+                    <button class="btn w-100 placingForm-2__btn" type="submit">Далее</button>
                 </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Placing 3 -->
-<div aria-hidden="true" aria-labelledby="modalPlacingLabel-3" class="modal fade" id="modalPlacing-3" role="dialog"
-     tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalPlacingLabel-3">Размещение в котировке</h5>
-                <div class="modal-step">Шаг 3 из 3
-                    <span class="step-back" data-dismiss="modal" data-target="#modalPlacing-2"
-                          data-toggle="modal">Назад</span>
-                </div>
-                <button aria-label="Close" class="close" data-dismiss="modal" type="button"></button>
-            </div>
-            <div class="modal-body">
-                <form class="needs-validation" novalidate>
+                <form class="needs-validation placingForm-3" novalidate>
                     <div class="form-group">
                         <label class="label">
                             <input class="input form-control" placeholder="ФИО заполнившего анкету" required
@@ -206,7 +184,8 @@
                     </div>
                     <div class="form-group">
                         <div class="dropdown">
-                            <button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
+                            <button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                                    data-toggle="dropdown"
                                     id="yearOpen" type="button">
                                 Год открытия франшизы
                             </button>
@@ -253,7 +232,7 @@
                             <div class="invalid-feedback">Example invalid feedback text</div>
                         </div>
                     </div>
-                    <button class="btn w-100" type="submit">Отправить форму</button>
+                    <button class="btn w-100 placingForm-3__btn" type="submit">Отправить форму</button>
                 </form>
             </div>
         </div>

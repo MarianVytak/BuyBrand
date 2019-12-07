@@ -8,9 +8,6 @@
 
 .main__advertising {
 	display: none;
-	img {
-		width: 100%;
-	}
 }
 
 .zoom {
@@ -46,7 +43,9 @@
 
 @include media-breakpoint-down(md) {
 	.main__advertising {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	.main__placing {
 		display: none;
