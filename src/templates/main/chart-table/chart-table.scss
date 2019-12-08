@@ -68,7 +68,6 @@
 		height: 100%;
 		background-image: linear-gradient(to right, rgba(255, 255, 255, 0.33) 0%, #ffffff 100%);
 	}
-	//padding: 0 20px;
 	.mCSB_container {
 		display: flex;
 		align-items: center;
@@ -120,76 +119,13 @@
 
 .chart-table__block_list {
 	height: 160px;
-	overflow-y: auto;
 	margin-top: 15px;
-	&.active {
-		height: auto;
-		border-right: 1px solid rgba($black, 0.15);
-		//.chart-table__block_list_item {
-		//	padding-right: 16px;
-		//}
-	}
-	.mCSB_inside {
-		.mCSB_container {
-			margin-right: 16px;
-			&.mCS_no_scrollbar_y.mCS_y_hidden {
-				margin-right: 0;
-			}
-		}
-	}
-	.mCSB_scrollTools {
-		background-color: $gray;
-		opacity: 1;
-		transition: none;
-		.mCSB_dragger {
-			.mCSB_dragger_bar {
-				width: 6px;
-				border-radius: 3px;
-				box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.14);
-				background-color: $white;
-			}
-		}
-		.mCSB_draggerRail {
-			background-color: transparent;
-		}
-	}
-	.mCSB_draggerContainer {
-		top: 5px;
-		bottom: 5px;
-	}
-}
-
-.chart-table__block_list_all {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	transform: translateY(100%);
-	width: 40px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: $gray;
-	&.active {
-		.chart-table__block_list_all_arrow {
-			transform: rotate(180deg);
-		}
-	}
-}
-
-.chart-table__block_list_all_arrow {
-	width: 24px;
-	height: 24px;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%231e90ff' fill-rule='nonzero' d='M2.836 7a.5.5 0 0 0-.699.715L11.642 17a.5.5 0 0 0 .698 0l9.523-9.284A.5.5 0 1 0 21.165 7l-9.174 8.944L2.836 7z'/%3E%3C/svg%3E");
-	background-color: $white;
-	//transition: .3s;
 }
 
 .chart-table__block_list_item {
 	display: grid;
 	grid-template-columns: minmax(0, 72px) minmax(0, 1fr) minmax(0, 80px) minmax(0, 80px) minmax(0, 120px) minmax(0, 50px);
 	border-bottom: 1px solid rgba($black, 0.15);
-	//border-right: 1px solid rgba($black, 0.15);
 	height: 40px;
 	&:first-child {
 		border-top: 1px solid rgba($black, 0.15);

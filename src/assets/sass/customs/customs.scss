@@ -3,6 +3,7 @@
 
 @import "buttons";
 @import "titles";
+@import "breadcrumb";
 @import "dropdown";
 @import "popover";
 @import "slider";
@@ -11,6 +12,7 @@
 @import "chart-hover";
 @import "nouislider";
 @import "form";
+@import "toggle-content";
 
 .content {
 	display: grid;

@@ -10,6 +10,14 @@ $(function () {
         $(thisDropdown).text(thisText);
     });
 
+    // Згортання/розгортання контенту
+    $('.btn-all').on('click', function (e) {
+        e.preventDefault();
+        let thisList = $(this).attr('href');
+        $(this).toggleClass('active');
+        $(thisList).toggleClass('active');
+    });
+
     // Заміна чартів для мобільної версії
     if ($('html, body').width() < 768) {
         $('.chart').fadeOut();

@@ -25,16 +25,9 @@ $(function () {
         ]
     });
 
-    $('.chart-table__block_list_all').on('click', function (e) {
-        e.preventDefault();
-        let thisList = $(this).attr('href');
-        $(this).toggleClass('active');
-        $(thisList).toggleClass('active');
-    });
-
     $(window).on("load",function(){
 
-        $(".chart-table__block_list").mCustomScrollbar();
+        $(".toggle-content").mCustomScrollbar();
 
     });
 
