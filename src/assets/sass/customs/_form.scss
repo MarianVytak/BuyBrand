@@ -21,11 +21,20 @@ form {
 	color: #555555;
 }
 
+.form-link {
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+.custom-control-label {
+	font-size: 14px;
+}
+
 .custom-checkbox {
-	padding-left: 2.5rem;
+	padding-left: 2.8rem;
 	.custom-control-label {
 		&:before {
-			left: -2.5rem;
+			left: -2.8rem;
 			width: 34px;
 			height: 28px;
 			border-radius: 0;
@@ -34,7 +43,7 @@ form {
 			background-repeat: no-repeat;
 		}
 		&:after {
-			left: -2.5rem;
+			left: -2.8rem;
 			width: 34px;
 			height: 28px;
 		}
@@ -64,6 +73,26 @@ form {
 .was-validated .custom-control-input:valid:checked ~ .custom-control-label::before, .custom-control-input.is-valid:checked ~ .custom-control-label::before {
 	border: none;
 	background-color: transparent;
+}
+
+.was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
+	box-shadow: none;
+}
+
+.was-validated .custom-control-input:invalid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-invalid:focus:not(:checked) ~ .custom-control-label::before {
+	border: none;
+}
+
+.was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
+	box-shadow: none;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+	background-image: none;
+}
+
+.was-validated .form-control:valid, .form-control.is-valid {
+	background-image: none;
 }
 
 .input-add {
@@ -99,4 +128,22 @@ form {
 }
 .placingForm-3 {
 	display: none;
+}
+
+
+@include media-breakpoint-down(sm) {
+	form {
+		.dropdown-toggle {
+			height: 48px;
+			padding: 0 0.5rem;
+		}
+	}
+	.form-group {
+		margin-bottom: 1.5rem;
+	}
+	.input {
+		height: 48px;
+		padding: 0 0.5rem;
+		font-size: 14px;
+	}
 }

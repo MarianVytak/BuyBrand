@@ -17,3 +17,10 @@
 		box-shadow: none;
 	}
 }
+
+
+@include media-breakpoint-down(sm) {
+	.btn {
+		padding: 0.8em 1.2em;
+	}
+}
