@@ -1,9 +1,8 @@
 .toggle-content {
-	height: 160px;
+	position: relative;
 	overflow-y: auto;
-	margin-top: 15px;
 	&.active {
-		height: auto;
+		max-height: none;
 		border-right: 1px solid rgba($black, 0.15);
 	}
 	.mCSB_inside {
@@ -48,7 +47,7 @@
 	justify-content: center;
 	background-color: $gray;
 	&.active {
-		.chart-table__block_list_all_arrow {
+		.btn-all__arrow {
 			transform: rotate(180deg);
 		}
 	}

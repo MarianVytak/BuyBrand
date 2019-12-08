@@ -16,6 +16,11 @@ body {
   box-sizing: border-box;
 }
 
+.container-small {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
 img {
   width: auto;
   max-width: 100%;

@@ -4,6 +4,7 @@
 @import "buttons";
 @import "titles";
 @import "breadcrumb";
+@import "table";
 @import "dropdown";
 @import "popover";
 @import "slider";
@@ -32,6 +33,7 @@
 }
 
 .ratio-up {
+	display: inline-block;
 	width: 0;
 	height: 0;
 	margin-left: 5px;
@@ -41,6 +43,7 @@
 }
 
 .ratio-down {
+	display: inline-block;
 	width: 0;
 	height: 0;
 	margin-left: 5px;

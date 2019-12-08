@@ -17,6 +17,10 @@ $(function () {
         $(this).toggleClass('active');
         $(thisList).toggleClass('active');
     });
+    // Фікс багу з бордером в таблиці
+    $('.btn-all-table').on('click', function () {
+        $('.table').toggleClass('active');
+    });
 
     // Заміна чартів для мобільної версії
     if ($('html, body').width() < 768) {
