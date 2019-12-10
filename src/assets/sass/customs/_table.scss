@@ -55,3 +55,30 @@
 		}
 	}
 }
+
+
+
+@include media-breakpoint-down(sm) {
+	.table {
+		font-size: 12px;
+	}
+	.quotation__table {
+		.thead, .tbody {
+			.tr {
+				grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+				.th, .td {
+					padding: 0.4rem;
+					&:nth-child(3) {
+						border-right: none;
+					}
+					&:last-child {
+						display: none;
+					}
+				}
+				.ratio-up, .ratio-down {
+					display: none;
+				}
+			}
+		}
+	}
+}
