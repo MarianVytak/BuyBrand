@@ -1,3 +1,4 @@
+//= components/chart.js
 //= components/customs.js
 //= components/form.js
 //= ../../templates/sidebar/sidebar.js
