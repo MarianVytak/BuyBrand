@@ -65,9 +65,15 @@
 
     <div class="container-small">
 
-        <canvas id="myChart"></canvas>
-
-        <img alt="" src="assets/img/chart.png">
+        <div class="quotation__chart_collapsed collapsed" data-toggle="collapse" data-target="#quotationChart-1" aria-expanded="false" aria-controls="quotationChart-1">
+            <div class="chart-table__block_menu_dropdown">
+                <div class="quotation__chart_collapsed_text"></div>
+                <div class="quotation__chart_collapsed_arrow"></div>
+            </div>
+        </div>
+        <div class="collapse" id="quotationChart-1">
+            <canvas id="myChart"></canvas>
+        </div>
 
         <div class="quotation__table table mt-5">
             <a href="#table-1" class="btn-all btn-all-table">
