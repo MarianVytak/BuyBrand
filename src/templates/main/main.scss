@@ -2,8 +2,15 @@
 @import "chart-table/chart-table";
 @import "info/info";
 
-.main {
-	//padding-top: 50px;
+.main__head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main__data {
+	font-size: 12px;
+	color: rgba($black, 0.5);
 }
 
 .main__advertising {
