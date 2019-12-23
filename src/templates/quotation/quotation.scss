@@ -1,3 +1,21 @@
+.quotation__head {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	.info {
+		position: relative;
+		top: auto;
+		right: auto;
+		transform: none;
+		margin-right: 1rem;
+	}
+}
+
+.quotation__head_logo {
+	width: 88px;
+	margin: 0 1rem;
+}
+
 .quotation__grid {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
