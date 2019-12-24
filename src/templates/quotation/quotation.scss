@@ -105,6 +105,34 @@
 	transition: .3s;
 }
 
+.quotation__chart_links {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 1rem;
+}
+
+.quotation__chart_links_item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 105px;
+	height: 32px;
+	padding: 0 1em;
+	border: 1px solid $main;
+	border-left: none;
+	font-size: 12px;
+	color: $black;
+	text-align: center;
+	&.active {
+		background-color: $main;
+		color: $white;
+	}
+	&:first-child {
+		border-left: 1px solid $main;
+	}
+}
+
 
 
 @include media-breakpoint-down(lg) {
