@@ -1,26 +1,9 @@
-.about {
-	display: grid;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 264px);
-	grid-gap: 40px;
-	padding-bottom: 3rem;
-	border-bottom: 1px solid $gray;
-}
-
-.about__sidebar {
-	img {
-		width: 100%;
-		max-height: none;
-	}
-}
-
-@include media-breakpoint-down(sm) {
-	.about {
-		grid-template-columns: minmax(0, 1fr);
-	}
-	.about__sidebar {
-		text-align: center;
-		img {
-			width: auto;
-		}
+.about__btn {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-top: 1rem;
+	.btn {
+		margin-right: 3rem;
 	}
 }

@@ -42,6 +42,16 @@
 	border-color: transparent transparent #c1f6d4 transparent;
 }
 
+.ratio-text {
+	font-size: 14px;
+	&.up {
+		color: #82d5a0;
+	}
+	&.down {
+		color: #ffc0c7;
+	}
+}
+
 .ratio-down {
 	display: inline-block;
 	width: 0;

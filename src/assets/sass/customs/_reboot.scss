@@ -16,11 +16,6 @@ body {
   box-sizing: border-box;
 }
 
-.container-small {
-  max-width: 920px;
-  margin: 0 auto;
-}
-
 img {
   width: auto;
   max-width: 100%;
@@ -65,18 +60,6 @@ select {
 select {
   -moz-appearance:textfield;
 }
-
-//input[type=number]::-webkit-inner-spin-button,
-//input[type=number]::-webkit-outer-spin-button {
-//  -webkit-appearance: none;
-//  -moz-appearance: none;
-//  appearance: none;
-//  margin: 0;
-//}
-//
-//input[type=number] {
-//  -moz-appearance:textfield;
-//}
 
 input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
