@@ -1,0 +1,205 @@
+.about-franchise {
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.franchise-meta {
+	margin-bottom: 30px
+}
+
+.franchise-meta:after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.franchise-meta .meta-head {
+	margin-bottom: 18px;
+	background-color: rgba(0, 0, 0, .1);
+	padding: 8px 27px 6px;
+	text-align: center
+}
+
+.franchise-meta .meta-head:after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.franchise-meta .meta-head li {
+	display: inline-block;
+	list-style: none;
+	width: 33.33%;
+	font-size: 16px;
+	line-height: 26px;
+	color: #000;
+	font-weight: 300;
+	text-align: left
+}
+
+.franchise-meta .meta-head li b {
+	display: block
+}
+
+.franchise-meta .meta-head li:first-child {
+	float: left;
+	width: 170px
+}
+
+.franchise-meta .meta-head li:last-child {
+	width: 170px;
+	float: right
+}
+
+.franchise-meta .meta-content {
+	padding-left: 27px;
+	padding-right: 27px;
+	text-align: center;
+	margin: 0
+}
+
+.franchise-meta .meta-content li {
+	display: inline-block;
+	width: 33.33%;
+	font-size: 24px;
+	line-height: 26px;
+	color: #000;
+	text-align: left;
+	font-weight: 500
+}
+
+.franchise-meta .meta-content li span {
+	font-size: 16px;
+	line-height: 26px
+}
+
+.franchise-meta .meta-content li:first-child {
+	float: left;
+	width: 170px
+}
+
+.franchise-meta .meta-content li:last-child {
+	width: 170px;
+	float: right
+}
+
+.franchise-features {
+	margin-bottom: 25px;
+	background-color: #000;
+	color: #fff;
+	padding: 30px 27px
+}
+
+.franchise-features:after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.franchise-features li {
+	display: inline-block;
+	width: 20%;
+	float: left;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
+	list-style: none;
+	vertical-align: top;
+	padding-right: 15px
+}
+
+.franchise-features li b {
+	display: block;
+	font-size: 38px;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: -1.9px;
+	margin-bottom: 10px
+}
+
+.franchise-features.vertical {
+	background-color: #f2f2f2;
+	margin-bottom: 36px
+}
+
+.franchise-features.vertical li {
+	display: block;
+	width: 100%;
+	color: #000;
+	margin-bottom: 25px
+}
+
+.franchise-features.vertical li:last-child {
+	margin-bottom: 0
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+	.franchise-features li {
+		font-size: 12px;
+		line-height: 16px
+	}
+	.franchise-features li b {
+		font-size: 32px;
+		margin-bottom: 7px
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.franchise-meta .meta-head {
+		padding-left: 15px;
+		padding-right: 15px
+	}
+	.franchise-meta .meta-head li {
+		width: 33.33% !important;
+		font-size: 14px;
+		padding-right: 18px
+	}
+	.franchise-meta .meta-head li:last-child {
+		padding-right: 0
+	}
+	.franchise-meta .meta-content {
+		padding-left: 15px;
+		padding-right: 15px
+	}
+	.franchise-meta .meta-content li {
+		width: 33.33% !important;
+		font-size: 16px;
+		padding-right: 18px
+	}
+	.franchise-meta .meta-content li:last-child {
+		padding-right: 0
+	}
+	.franchise-features {
+		background-color: transparent !important;
+		color: #000;
+		padding: 0
+	}
+	.about-franchise .franchise-features li {
+		font-size: 11px
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.franchise-meta .meta-head li {
+		line-height: 16px
+	}
+	.franchise-meta .meta-content li {
+		font-size: 12px;
+		line-height: 16px
+	}
+	.franchise-meta .meta-content li span {
+		font-size: 12px
+	}
+	.franchise-features li {
+		display: block;
+		width: 50% !important;
+		margin-bottom: 15px !important;
+		font-size: 12px !important
+	}
+	.franchise-features li:nth-child(2n+1) {
+		clear: both
+	}
+}

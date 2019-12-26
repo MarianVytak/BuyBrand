@@ -1,0 +1,23 @@
+.more-text-hidden {
+	display: none;
+	&.active {
+		display: inline;
+	}
+}
+
+.more-text__link {
+	text-align: right;
+	a {
+		position: relative;
+		color: $main;
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			border-bottom: 1px dashed $main;
+		}
+	}
+}
