@@ -2,8 +2,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	padding-top: 1rem;
+	flex-wrap: wrap;
 	.btn {
 		margin-right: 3rem;
+		margin-top: 1rem;
+		white-space: nowrap;
+	}
+}
+
+
+
+@include media-breakpoint-down(sm) {
+	.about__btn {
+		.btn {
+			width: 100%;
+			margin-right: 0;
+		}
 	}
 }

@@ -17,9 +17,6 @@
 }
 
 .quotation__grid {
-	display: grid;
-	grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
-	grid-gap: 24px;
 	padding-top: 60px;
 }
 
@@ -135,9 +132,6 @@
 }
 
 .quotation__content {
-	display: grid;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 264px);
-	grid-gap: 40px;
 	padding-top: 6rem;
 	padding-bottom: 3rem;
 	border-bottom: 1px solid $gray;
@@ -151,12 +145,7 @@
 
 
 
-@include media-breakpoint-down(lg) {}
-
 @include media-breakpoint-down(sm) {
-	.quotation__content {
-		grid-template-columns: minmax(0, 1fr);
-	}
 	.quotation__table {
 		.thead, .tbody {
 			.tr {
