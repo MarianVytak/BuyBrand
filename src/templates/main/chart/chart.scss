@@ -8,6 +8,20 @@
 ;
 }
 
+.chart-v2 {
+	display: none;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 8px;
+	grid-template-areas:
+					'block-1 block-1 block-1 block-2 block-2 block-2'
+					'block-1 block-1 block-1 block-2 block-2 block-2'
+;
+}
+
+.chart-v3 {
+	display: none;
+}
+
 .chart__block {
 	padding: 8px;
 	background: $gray;
